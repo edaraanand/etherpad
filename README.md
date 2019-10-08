@@ -13,5 +13,5 @@ docker run -it --name pg-docker1 -e POSTGRES_USER=etherpad -e POSTGRES_PASSWORD=
 # Build the etherpad image from the source code and modify the settings.json file if needed (It's pointing to the container ip and port)
 docker build --tag edaraanand/etherpad:latest .
 
-#Run the etherpad
+# Run the etherpad container
 docker run -it -d -p 9001:9001 edaraanand/etherpad:latest
